@@ -1,0 +1,34 @@
+<form (ngSubmit)=onSubmit(f) #f="ngForm">
+    <table class="table">
+        <div class="row">
+            <div class="col">
+                <tr><td>Name</td><td><input type="text" name="name" class="form-control" ngModel></td></tr>
+                <tr><td>Address</td><td><input type="text" name="add" class="form-control" ngModel></td></tr>
+                <tr><td>Gender</td><td><input type="radio" name="male" id="" value="Male" ngModel>Male</td><td><input type="radio" name="female" id="" value="female" ngModel>Female</td></tr>
+                <tr><td>Date of Birth</td><td><input type="date" name="dob" id="" class="form-control" ngModel></td></tr>
+                <tr><td>District</td><td><select name="dist" id="" class="form-control" ngModel>
+                    <option value="">Thiruvananthapuram</option>
+                    <option value="">Kollam</option>
+                    <option value="">pathanamthitta</option>
+                    <option value="">Alappuzha</option>
+                    <option value="">Idukki</option>
+                    <option value="">Eranakulam</option>
+                    <option value="">Thrissur</option>
+                    <option value="">Palakkad</option>
+                    <option value="">Malappuram</option>
+                    <option value="">Kozhikkod</option>
+                    <option value="">Wayanad</option>
+                    <option value="">Kannur</option>
+                    <option value="">Kasargod</option>
+                </select></td></tr>
+                <tr><td>Place</td><td><input type="text" name="place" class="form-control" ngModel></td></tr>
+                <tr><td>Mobile Number</td><td><input type="text" name="mob" id="" class="form-control" ngModel></td></tr>
+                <tr><td>Email</td><td><input type="text" name="email" class="form-control" ngModel></td></tr>
+                <tr><td>Username</td><td><input type="text" name="username" id="" class="form-control" ngModel></td></tr>
+                <tr><td>Password</td><td><input type="text" name="pswd" class="form-control" ngModel></td></tr>
+                <tr><td>Confirm Password</td><td><input type="text" name="cpswd" class="form-control" ngModel></td></tr>
+                <tr><td></td><button type="submit"  class="btn btn-info">Submit</button></tr>
+            </div>
+        </div>
+    </table>
+</form>
